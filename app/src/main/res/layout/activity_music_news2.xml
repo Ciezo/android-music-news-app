@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicNewsActivity2">
+
+    <ImageView
+        android:id="@+id/imageCover_article2"
+        android:layout_width="513dp"
+        android:layout_height="308dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/music_stream" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="377dp"
+        android:layout_height="441dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/h1_article2"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebas_neue"
+                android:text="The influence of movie streaming on music streaming"
+                android:textColor="#000000"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/article2Parag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="One of the featured songs in Season 4 of Netflix’s Stranger Things is Running Up That Hillby Kate Bush."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/article2Parag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="While it was a notable song when it was released in 1985, Kate Bush didn’t remain a dominant public figure in the musical world to date ... that is, until the most reason season was released and brought more attention to the song than it had received in years, culminating in over 226,000,000 plays on Spotify at the time this article was written. While the show likely played a significant role in the recent rise of synthwave’s popularity, it’s almost unheard of for one song to receive so many plays more than 35 years after its release!"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/article2Parag3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The biggest takeaway here is that mediums such as movies and video games now have the power to impact the music industry in a big way, almost immediately. You don’t need to watch or play the most popular new releases, but you should be aware of them — if a movie becomes a hit and its soundtrack can only be described as “retro cowboy scifi” ... it might not hurt to add that flavor to some of your music for a bit and ride the wave (if the style is on-brand for you, of course)."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/goBackHome"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Go Back" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

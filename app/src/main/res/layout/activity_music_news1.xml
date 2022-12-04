@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicNewsActivity1">
+
+    <ImageView
+        android:id="@+id/imageCover_article1"
+        android:layout_width="513dp"
+        android:layout_height="308dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:baselineAligned="false"
+        android:src="@drawable/nft_music"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="377dp"
+        android:layout_height="441dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/h1_article2"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebas_neue"
+                android:text="NFTs in Music"
+                android:textColor="#000000"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/article2Parag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is perhaps the most dramatic shift in the music industry in recent years, offering artists with unprecedented opportunities for branding and selling their music. "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/article1Parag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you’re unfamiliar with NFTs (or non-fungible tokens), the idea is that you can create an asset that is uncopyable — its unique ID protects from theft or unauthorized reproduction, and inherently assigns a greater value to the digital item being sold than it would have otherwise. As a result, digital downloads, which were more or less stripped of their value with the advent of file sharing, could be a viable source of income for artists once again.  "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/article1Parag3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NFTs aren’t limited to music, either; they can be used for a nearly endless variety of digital transactions, and the sky's the limit."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/article1Parag4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="That said, it’s advisable to proceed with caution in regard to NFTs. They’re designed with the ability to be resold, and while this allows you to reward your fans with something of monetary value, that value is linked somewhat to that of the specific cryptocurrency on which the NFT is built. "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/article1Parag5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There is no physical value involved, which inherently introduces an element of uncertainty where trading is concerned. NFTs can also be expensive to create, and there are many illegitimate companies that falsely claim to offer this service. The opportunities involved may be enormous, but this is an area that merits extreme care. — if you want to dive in deeper, check out this article from Forbes on NFTs in music."
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/goBackHome"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:text="Go Back" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
